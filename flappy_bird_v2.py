@@ -28,6 +28,7 @@ game_font = pygame.font.Font(r'Assets\04B_19.TTF', 40)
 back_ground = pygame.image.load(r'Assets\flappy-bird-assets\sprites\background-day.png').convert()#  Convert runs code more smothly
 back_ground = pygame.transform.scale2x(back_ground)
 
+# Surfaces
 floor_surface = pygame.image.load(r'Assets\flappy-bird-assets\sprites\base.png').convert()
 floor_surface = pygame.transform.scale2x(floor_surface)
 floor_surface_x_pos = 0
