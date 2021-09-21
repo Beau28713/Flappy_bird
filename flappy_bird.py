@@ -1,8 +1,9 @@
 import pygame, sys
 import random
-import Window# My window mod
 
-main_screen = Window.window(576, 800, "Sprite")
+pygame.init()
+size = (500, 700)
+main_screen = pygame.display.set_mode(size)
 
 BLACK = pygame.Color(0,0,0)
 RED = pygame.Color(255,0,0)
@@ -23,7 +24,7 @@ flap_sound = pygame.mixer.Sound(r'Assets\flappy-bird-assets\audio\wing.wav')
 hit_pipe = pygame.mixer.Sound(r'Assets\flappy-bird-assets\audio\hit.wav')
 
 # Fonts
-game_font = pygame.font.Font(r'Assets\04B_19.TTF', 40)
+game_font = pygame.font.Font(r'Assets\flappy-bird-assets\04B_19.TTF', 40)
 
 back_ground = pygame.image.load(r'Assets\flappy-bird-assets\sprites\background-day.png').convert()#  Convert runs code more smothly
 back_ground = pygame.transform.scale2x(back_ground)
